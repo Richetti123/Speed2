@@ -131,9 +131,9 @@ global.moment = moment
 // [ES] > Agregate a ti, colaboradores o ayudates, aparecerá en el comando de lista de contactos.
 // [EN] > Adding yourself, collaborators or helpers will appear in the contact list command.
 global.official = [ // Agregate si eres Owner
-["56941827124", 'TruenoBot', 1], 
-["56941827124", 'TruenoBot', 1],  
-["56928561853", 'TruenoBot', 1]]
+["56941827124", 'SpeedBot', 1], 
+["56941827124", 'SpeedBot', 1],  
+["56928561853", 'SpeedBot', 1]]
 
 global.mail = '' // Add email
 global.desc = '' // Add short description (20 caractres max)
@@ -141,8 +141,8 @@ global.desc2 = '' // Add long description (90 caractres max) (Este parámetro se
 global.country = '' // Add country, example: 🇪🇨
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
-global.packname = `TruenoBot` //"MichiBot"
-global.author = `TruenoBot` //"MichiBot"
+global.packname = `SpeedBot` //"MichiBot"
+global.author = `SpeedBot` //"MichiBot"
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 // [ES] > INFORMACIÓN DE VERSIONES DEL BOT, POR FAVOR 
@@ -150,7 +150,7 @@ global.author = `TruenoBot` //"MichiBot"
 // [EN] > BOT VERSION INFORMATION, PLEASE KEEP THIS UNCHANGED, WE STRIVE DAILY TO PROVIDE YOU WITH A BOT FOR THE COMMUNITY, BE GRATEFUL
 global.vs = "1.7.0"
 global.vsJB = "3.0 (Beta)"
-global.gt = "TruenoBot"
+global.gt = "SpeedBot"
 
 fetchDataAndProcess().catch(error => console.error('Ocurrió un error:', error))
 
@@ -178,8 +178,8 @@ global.eg = '╰⊱💚⊱ *𝙀́𝙓𝙄𝙏𝙊 | 𝙎𝙐𝘾𝘾𝙀𝙎�
 global.exito = eg
 
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
-global.wm = "TruenoBot"
-global.igfg = "TruenoBot"
+global.wm = "SpeedBot"
+global.igfg = "SpeedBot"
 global.nomorown = "56928561853"
 global.pdoc = ["application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/vnd.ms-excel", "application/msword", "application/pdf", "text/rtf"]
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
@@ -444,7 +444,7 @@ import(`${file}?update=${Date.now()}`);
 })
 
 async function fetchDataAndProcess() {
-const response = await fetch('https://raw.githubusercontent.com/Richetti123/Trueno2/master/official_accounts.json')
+const response = await fetch('https://raw.githubusercontent.com/Richetti123/Speed2/master/official_accounts.json')
 const data = await response.json() 
 let { accounts, channels, groups, collaboration, sponsors, others } = data.info
 
